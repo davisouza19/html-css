@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(truetype);
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: 0.2s;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   background-color: #e5f4d2; 
+}
+/*---------------------------------------------------------------------------------cabeçalho*/
+.cabeçalho{
+    background-image: linear-gradient(to top, #025038 20%, #3ddc84);
+    min-width: 100%;
+    height: 20rem;
+    position: relative;
+    box-shadow: 0px 5px 9px #000000a1;
+}
+
+.cabeçalho article{
+    text-align: center;
+}
+
+.cabeçalho article h1{
+    font-size: 3.5rem;
+    padding: 4rem 2rem 1rem 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: #f7f7f7;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px #00000051;
+}
+
+.cabeçalho article p{   
+    font-size: 2rem;
+    text-align: center;
+    color: #cdcdcd;
+    padding: 0rem 2rem 0rem 2rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.cabeçalho .nav-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 7px;
+}
+
+.cabeçalho .nav-bar a{
+    font-size: 1.5rem;
+    color: #3ddc84;
+    margin: 0rem 2rem;
+}
+
+.cabeçalho .nav-bar a:hover{
+    text-decoration: underline;
+    background-color: #3ddc853f;
+    padding: 7px;
+    border-radius: 0.3rem;
+}
+/*---------------------------------------------------main*/
+
+main{
+    background-color: #fff;
+    max-width: 105rem;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-bottom: 5rem;
+    box-shadow: 0px 0px 10px #000000a1;
+
+}
+
+@media (max-width: 750px){
+    main{
+        max-width: 96%;
+    }
+}
+/*--------------------------------------------destaque*/
+    .mark{
+        font-size: 1.6rem;
+        color: #33b06b;
+        font-weight: bold;   
+    }
+
+    .level2{
+        background-image: linear-gradient(to right, #3ddc8555, #0000);
+        height: auto;
+        font-family: idroid;
+        font-size: 2rem;
+        color:#025038;
+        margin: 2rem 0rem 2rem 0remf;
+    }
+
+    .mark-link{
+        font-size: 1.6rem;
+        color: #025038;
+        font-weight: bold; 
+        background-color: #3ddc8555; 
+    }
+
+    .mark-link:hover{
+        text-decoration: underline;
+    }
+
+    .mark-link img{
+        width: 14px;
+        height: 14px;
+    }
+/*-------------------------------------- box-container*/
+
+.box-container .level1{
+    font-family: idroid;
+    font-size: 3rem;
+    color: #02533b;
+    margin-bottom: 2rem;
+}
+
+.box-container p{
+    font-size: 1.6rem;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.box-container picture .imagem{
+    display: block;
+    margin: 1 auto;
+    width: 96%;
+    margin: 3rem auto;
+}
+
+/*--------------------------------------*/
+
+.box-container .bugdroid-img{
+    display: block;
+    margin: 3rem auto;
+    width: 37%;
+}
+
+@media (max-width: 600px){
+    .box-container .bugdroid-img{
+        width: 70%;
+    }
+}
+/*---------------------------------------------yt-video*/
+
+.box-container .yt-video{
+    background-image: linear-gradient(45deg, #01422f, #02533b, #025039b8 150%);
+    margin-top: 4rem;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.box-container .yt-video iframe{
+    position: absolute;
+    top: 5% ;
+    right: 5% ; 
+    bottom: 5% ;
+    left: 5% ;
+    width: 90%;
+    height: 90%;
+}
+/*--------------------------------------------------quer aprender mais*/
+
+aside .box-list{
+    width: auto;
+    height: auto;
+    margin: 3rem auto;
+    background-color: #5fe099d0;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+aside .box-list h3{
+    background-color: #02533b;
+    margin: -2rem;
+    font-size: large;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: auto;
+    color: #fff;
+}
+
+    aside .box-list .box-list-container .extra{
+        margin: 4rem 0rem 2rem 0rem;
+    }
+
+    aside .box-list-container .list{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    aside .box-list-container .list .ul1{
+        width: 50%;
+    } 
+
+    aside .box-list-container .list .ul2{
+        width: 50%;
+    }
+
+    aside .box-list-container .list li{
+        font-size: 1.6rem;
+    }
+
+    aside .box-list-container .list li abbr{
+        font-size: 1.6rem;
+        text-decoration: underline dotted black;
+    }
+
+    .ultimos-p{
+        margin: 1rem;
+    }
+/*------------------------------------footer*/
+footer{
+    background-color: #01422f;
+    height: 2rem;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem
+}
+
+footer p span{
+    font-weight: 700;
+}
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Pseudo-Classees</title>
+    <style>
+        .aa{
+        background-color: lightgray;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-top: 1em;
+            
+        }
+
+        .aa:hover{
+            cursor: pointer;
+            background-color: #ecec9c;
+        }
+
+        .texto > p{
+            display: none;
+            background-color: #e58484;
+        }
+
+        .texto:hover > p{
+            display: block;
+            cursor: auto;
+            height: 2em;
+        }
+
+        .texto{
+            cursor: pointer;
+            width: 150px;
+            height: 2em;
+            background-color: #9ce584;
+        }
+
+        .aa:active{
+            background-color: #e58484;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <div class="aa"> <p>01</p></div>
+    <div class="aa"><p>02</p></div>
+    <div class="aa"><p>03</p></div>
+    <p></p>
+    <hr>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse no item abaixo:</p>
+    <div class="texto">
+        passe o mouse aq!
+        <p>TEXTO SECRETO</p>
+    </div>
+</body>
+</html>
