@@ -14,6 +14,6 @@ There you will find:
 - Better designs
 - More complete works
 
-👉 [Access here](https://davisouza19.github.io/html-css/Projetos\repositorio-de-projetos/)
+👉 [Access here](https://davisouza19.github.io/html-css/Projetos/repositorio-de-projetos/index.html)
 ---
 I'm always updating this repository as I learned new things and improve my skills.
