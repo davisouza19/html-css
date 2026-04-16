@@ -67,6 +67,18 @@ main{
 .nav-box .nav-links:hover{
     font-size: 18px;
     text-decoration: underline solid var(--text);
+
+}
+
+@media (max-width: 600px){
+    .nav-box .nav-links:hover{
+        font-size: 15px;
+    }
+
+    .nav-box .nav-links:active{
+        background-color: #0024362e;
+        transition: 0s;
+    }
 }
 
 .nav-box .nav-extra{
@@ -84,9 +96,17 @@ main{
 }
 /*------------------------------------nav*/
 
+
 .home{
     background-image: linear-gradient(45deg, #11638fdc, #1c5b780b );
-    height: 60rem;  
+    height: 50rem; 
+    padding-top: 7rem;
+}   
+
+@media (max-width: 780px){
+        .home{
+            height: auto;
+    }
 }
 
 .home>h1{
@@ -101,9 +121,14 @@ main{
 .home>p{
     color: #fff;
     text-align: center;
-    margin: auto;
-    width: 50rem;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 6rem;
     text-shadow: 2px 0px 2px #00000093 ;
 }
-
-.home>
+    
+@media(max-width: 780px){
+    .home>p{
+        min-width: 80%; 
+    }
+}
