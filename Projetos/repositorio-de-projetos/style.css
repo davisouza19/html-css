@@ -67,45 +67,35 @@ main{
 .nav-box .nav-links:hover{
     font-size: 18px;
     text-decoration: underline solid var(--text);
-
 }
 
 @media (max-width: 600px){
     .nav-box .nav-links:hover{
         font-size: 15px;
+        text-decoration: none;
     }
 
     .nav-box .nav-links:active{
         background-color: #0024362e;
         transition: 0s;
+        padding: 12px 15px;
     }
 }
 
-.nav-box .nav-extra{
-    text-align: end;
-    margin: -4rem 2rem 0rem 0rem;
-}
-
-.nav-box .nav-extra>img{
-    padding: 1rem;
-}
-
-.nav-box .nav-extra>img:hover{
-    width: 25px;
-    height: 25px;
-}
 /*------------------------------------nav*/
 
 
 .home{
     background-image: linear-gradient(45deg, #11638fdc, #1c5b780b );
-    height: 50rem; 
-    padding-top: 7rem;
+    height: 47rem; 
+    padding-top: 14rem;
+    margin-top: -6rem;
 }   
 
 @media (max-width: 780px){
         .home{
             height: auto;
+            padding-top: 2.5rem;
     }
 }
 
@@ -125,10 +115,61 @@ main{
     margin: 0 auto;
     padding-bottom: 6rem;
     text-shadow: 2px 0px 2px #00000093 ;
+    font-size: 1rem;
 }
     
 @media(max-width: 780px){
     .home>p{
         min-width: 80%; 
     }
+}
+
+/*-------------------------------------------projects-box-*/
+
+.projects-box{
+    height: auto;
+    padding: 1rem;
+}
+
+/*-------------------------------------------projects-content1-*/
+.projects-content1{
+    border: 1px solid black;
+    background-color: #fff;
+    height: auto;
+    margin: 2rem;
+    width: 50%;
+}
+
+.projects-content1 .projects-text>h2{
+    padding: 4rem 2.5rem;
+    font-size: 5rem;
+    font-family: "Alkatra", system-ui;
+}
+
+.projects-content1 .projects-text>p{
+    margin-top: -5.5rem;
+    padding: 4rem 2.5rem ;
+    font-size: 1.4rem;
+}
+
+/*--------------------------------------------project-content2-*/
+
+.projects-content2{
+    border: 1px solid black;
+    background-color: #fff;
+    height: auto;
+    margin: 2rem;
+    width: 50%;
+    }
+
+.projects-content2 .projects-text>h2{
+    padding: 4rem 2.5rem;
+    font-size: 5rem;
+    font-family: "Alkatra", system-ui;
+}
+
+.projects-content2 .projects-text>p{
+    margin-top: -5.5rem;
+    padding: 4rem 2.5rem ;
+    font-size: 1.4rem;
 }
