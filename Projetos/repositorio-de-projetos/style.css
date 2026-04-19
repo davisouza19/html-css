@@ -10,6 +10,7 @@
     transition: 0.3s;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -48,6 +49,7 @@ main{
   max-width: 120rem;
   z-index: 1000;
   background-color: #fff;
+  box-shadow: 0px 3px 3px #00000023;
 }
 
 .nav-box .nav-name{
@@ -126,50 +128,73 @@ main{
 
 /*-------------------------------------------projects-box-*/
 
-.projects-box{
+.project-box{
     height: auto;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #00000013;
+
 }
 
 /*-------------------------------------------projects-content1-*/
-.projects-content1{
-    border: 1px solid black;
+.project-content{
     background-color: #fff;
     height: auto;
-    margin: 2rem;
-    width: 50%;
+    margin: 2%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.27);
+    border-radius: 1rem;
 }
 
-.projects-content1 .projects-text>h2{
+.project-content .project-text>h2{
     padding: 4rem 2.5rem;
     font-size: 5rem;
     font-family: "Alkatra", system-ui;
+    text-align: center;
 }
 
-.projects-content1 .projects-text>p{
+.project-content .project-text>p{
     margin-top: -5.5rem;
     padding: 4rem 2.5rem ;
     font-size: 1.4rem;
+    text-align: justify;
 }
 
-/*--------------------------------------------project-content2-*/
-
-.projects-content2{
-    border: 1px solid black;
-    background-color: #fff;
-    height: auto;
-    margin: 2rem;
-    width: 50%;
-    }
-
-.projects-content2 .projects-text>h2{
-    padding: 4rem 2.5rem;
-    font-size: 5rem;
-    font-family: "Alkatra", system-ui;
+.project-content .project-image>img{
+    display: block;
+    margin: auto; 
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 380px;
 }
 
-.projects-content2 .projects-text>p{
-    margin-top: -5.5rem;
-    padding: 4rem 2.5rem ;
-    font-size: 1.4rem;
+aside{
+    padding: 2rem 0rem 5rem 0rem;
+    text-align: center;
 }
+
+aside>a{
+    margin-right: 5rem;
+    font-size: 14px;
+}
+
+aside .project{
+    background-color: var(--dark-blue);
+    padding: 1rem 3rem;
+    color: var(--letra-branca);
+    border-radius: 1.5rem;
+}
+
+aside .code{
+    color: #002436;
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+    
+}
+
+aside .code:active{
+    text-decoration: underline;
+    background-color: #00000022;
+    transition: 0s;
+}
+/*-------------------------------------sobre-*/
+
+
