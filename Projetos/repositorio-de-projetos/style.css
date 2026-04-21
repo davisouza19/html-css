@@ -28,8 +28,10 @@ main{
     background-color: #fff;
     max-width: 120rem;
     height: auto;
-    margin: 6rem auto;
+    margin: 6rem auto 0rem auto;
     border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.200), -2px 0px 10px rgba(0, 0, 0, 0.200);
+    
 }
 
 .top-bar{
@@ -129,7 +131,7 @@ main{
 
 .project-box{
     height: auto;
-    padding: 2rem;
+    padding: .5%;
     background-color: #00000013;
 
 }
@@ -220,8 +222,9 @@ aside .code:active{
 
 .about>p>a{
     color: #dadada;
-    font-weight: 800;
+    font-weight: 700;
     text-shadow: 2px 0px 3px #00000093;
+    font-size: 14px;
 }
 
 .about>p>a:hover{
