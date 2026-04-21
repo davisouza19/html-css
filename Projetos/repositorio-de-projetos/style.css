@@ -30,7 +30,6 @@ main{
     height: auto;
     margin: 6rem auto;
     border-radius: 0rem 0rem 1rem 1rem;
-    padding-bottom: 2.5rem;
 }
 
 .top-bar{
@@ -153,9 +152,10 @@ main{
 
 .project-content .project-text>p{
     margin-top: -5.5rem;
-    padding: 4rem 2.5rem ;
+    padding: 4rem 6% ;
     font-size: 1.4rem;
     text-align: justify;
+    
 }
 
 .project-content .project-image>img{
@@ -172,13 +172,13 @@ aside{
 }
 
 aside>a{
-    margin-right: 5rem;
+    margin-right: 8%;
     font-size: 14px;
 }
 
 aside .project{
     background-color: var(--dark-blue);
-    padding: 1rem 3rem;
+    padding: 1rem 3%;
     color: var(--letra-branca);
     border-radius: 1.5rem;
 }
@@ -186,7 +186,7 @@ aside .project{
 aside .code{
     color: #002436;
     border-radius: 1.5rem;
-    padding: 1rem 3rem;
+    padding: 1rem 3%;
     
 }
 
@@ -197,4 +197,49 @@ aside .code:active{
 }
 /*-------------------------------------sobre-*/
 
+.about{
+    background-image: linear-gradient(45deg, #11638fdc, #1c5b780b );
+    height: 20rem;  
+    padding-top: 10rem;
+}
+
+.about>h2{
+    font-family: "Alkatra", system-ui;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 0px 3px #00000093;
+    text-align: center;
+}
+
+.about>p{
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 2px 0px 3px #00000093;
+    text-align: center;
+}
+
+.about>p>a{
+    color: #dadada;
+    font-weight: 800;
+    text-shadow: 2px 0px 3px #00000093;
+}
+
+.about>p>a:hover{
+    text-decoration: underline;
+}
+
+.about>a>img{
+    filter: invert(1);
+    width: 60px;
+}
+/*------------------------------------------footer-*/
+
+footer{
+    margin-bottom: -2rem;
+}
+
+footer>p{
+    text-align: end;
+    padding: 0.5rem 1rem 0.3rem 0rem;
+}
 
