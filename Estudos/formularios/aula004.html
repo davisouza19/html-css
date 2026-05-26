@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--input de email, telefone; regex; fieldset e legend-->
+    <form action="exemplo.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <p>
+                <label for="contato">Telefone</label>
+                <input
+                type="tel"
+                name="contato"
+                id="contato"
+                autocomplete="tel"
+                pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}"
+                required
+                title="use o formato (00)0000-0000"
+                placeholder="(00)0000-0000">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="email">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
