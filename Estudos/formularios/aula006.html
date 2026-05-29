@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--select, datalist e textarea-->
+    <form action="exemplo.php" method="get">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>
+                <label for="estado">Estado: </label>
+                <select name="estado" id="estado" required>
+                    <option selected disabled>Escolha um estado</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="CE">Ceará</option>
+                </select>
+            </p>
+            <p>
+                <label for="linguagem">linguagem predileta: </label>
+                <input type="text" name="linguagem" id="linguagem" list="linguagens">
+                <datalist id="linguagens">
+                    <option value="python"></option>
+                    <option value="php"></option>
+                    <option value="java"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mansagem" id="mensagem" cols="25" rows="10"></textarea>
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+    </form>
+</body>
+</html>
