@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--elemento output: -->
+    <h1>1º Exemplo: </h1>
+    <form action="exemplo.php" method="get" autocomplete="on">
+        <p>
+            <label for="n1">Numero 1: </label>
+            <input type="number" name="n1" id="n1" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="n2">Numero 2: </label>
+            <input type="number" name="n2" id="n2" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="soma">Soma: </label>
+            <output id="soma" name="soma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    <hr>
+    <h1>2º exemplo: </h1>
+    <form action="exemplo.php" method="get" autocomplete="on">
+        <p>
+            <label for="volume">Volume: </label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="2" value="50" oninput="vol.innerHTML = Number(volume.value)">
+            <output id="vol">50</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    <hr>
+    <h1>3º exemplo: </h1>
+    <form action="exemplo.php" method="get" autocomplete="on">
+        <p>
+            <label for="ano">Ano de nascimento: </label>
+            <input type="number" name="ano" id="ano" min="1900" max="2026" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Você faz <output id="idade"></output> anos em 2026.</label>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>
