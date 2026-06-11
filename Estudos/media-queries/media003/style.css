@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*estilos gerais*/
+
+/*estilos retrato*/
+@media screen and (orientation: portrait){
+body{
+    background-color: rgb(250, 138, 0);
+}
+}
+/*estilos paisagem*/
+@media screen and (orientation: landscape){
+    body{
+    background-color: aqua;
+}
+}
