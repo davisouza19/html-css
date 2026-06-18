@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*Css de telas grandes*/
+@media screen and (min-width: 768px) {
+    i#burger{
+        display: none;
+    }
+    
+    menu{
+        display: block;
+    }
+    
+    header>menu>ul>li{
+        display: inline-block;
+        text-align: left;
+        width: 181px;
+        background-color: aquamarine;
+    }
+}

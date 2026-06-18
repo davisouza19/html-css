@@ -15,11 +15,11 @@ body{
 
 header{
     background-color: rgb(99, 99, 99);
-    text-align: center;
 }
 
 header>h1{
     padding: 30px;
+    text-align: center;
 }
 
 #burger{
@@ -28,6 +28,7 @@ header>h1{
     color: #ffffff;
     padding: 12px;
     cursor: pointer;
+    text-align: center;
 }
 
 #burger:hover{
@@ -39,15 +40,13 @@ header>menu{
     display: none;
 }
 
-header>menu>ul{
-    background-color: rgb(70, 70, 70);
-}
-
 header>menu>ul>li{
     border: 2px solid rgb(99, 99, 99);
+    text-align: center;
 }
 
 header>menu>ul>li>a{
+    background-color: rgb(70, 70, 70);
     display: block;
     padding: 12px;
     color: white;
