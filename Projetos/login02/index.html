@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/geral.css" media="all">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 769px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 993px)">
+    <title>tela de login</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="" method="post" autocomplete="on">
+                <div class="input-box">
+                    <i id="account_circle" class="material-icons">account_circle</i>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="email" required>
+                </div>
+                <div class="input-box">
+                    <i id="lock_person" class="material-icons">lock_person</i>
+                    <input type="password" name="password" id="password" placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="16" required>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Entrar</button>
+                </div>
+                <div class="forgotp">
+                    <a href="recuperear.html" target="_blank">Esqueci a senha <i id="mail" class="material-icons">mail</i></a>
+                </div>
+            </form>
+        </div>
+        <div class="imagens-box">
+            <!--imagens-->
+        </div>
+    </main>
+</body>
+</html>
