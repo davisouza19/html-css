@@ -8,4 +8,15 @@ body{
 
 main{
     width: 950px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagens-box{
+    width: 55%;
+    background-size: 50%;
+    background-image: url("../imagens/building-pattern4.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    border-radius: 0px 20px 20px 0px;
 }

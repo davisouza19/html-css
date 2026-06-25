@@ -3,5 +3,20 @@
 /*Mobile Style*/
 
 body{
-    background-color: rgb(124, 68, 198);
+    background-color: rgba(98, 52, 152, 0.874);
+}
+
+main{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagens-box{
+    height: 220px;  
+    background-size: 640px;
+    background-image: url("../imagens/building-pattern4.jpg");
+    background-repeat: no-repeat;
+    order: -1;
+    border-radius: 20px 20px 0px 0px;
 }
