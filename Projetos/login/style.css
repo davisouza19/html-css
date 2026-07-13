@@ -16,20 +16,20 @@
 body{
     background: linear-gradient(125deg, #1e66d3,#7571BE, #dc419c);
     background-attachment: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
     border: 2px solid white;
     border-radius: 2rem;
-    margin: auto;
     padding: 2rem;
     width: 500px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(100px);
+    height: auto;  
+    backdrop-filter: blur(100px); /*fundo borrado*/
 }
 
 @media(max-width: 610px){
