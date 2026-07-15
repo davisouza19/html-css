@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using aling self</title>
+    <style>
+        .conteiner{
+            background-color: rgba(187, 237, 100, 0.737);
+            display: flex;
+            height: 350px;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        .item{
+            background-color: #ae00ff92;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+        #a{
+            align-self: auto;
+        }
+
+        #b{
+            align-self: flex-end;    
+        }
+
+        #c{
+            align-self: flex-start;
+        }
+
+        #d{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="a">auto</div>
+        <div class="item" id="b">flex-end</div>
+        <div class="item" id="c">flex-start</div>
+        <div class="item" id="d">center</div>
+        <div class="item" id="e">nada (padrão)</div>
+        <div class="item" style="align-self: stretch;">stretch</div>
+    </div>
+</body>
+</html>
